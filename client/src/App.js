@@ -19,8 +19,9 @@ import Contact from './components/Contact/Contact'
 
 
 const httpLink = createHttpLink({
-  uri: 'http://localhost:3001/graphql',
+  uri: `https://study-buddy-p3-0d14fa2a37d6.herokuapp.com/graphql` || 'http://localhost:3001/graphql',
 });
+
 // Construct request middleware that will attach the JWT token to every request as an `authorization` header
 const authLink = setContext((_, { headers }) => {
   // get the authentication token from local storage if it exists
