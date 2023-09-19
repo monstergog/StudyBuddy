@@ -25,8 +25,8 @@ const UserPage = () => {
     try {
       await createDeck({
         variables: {
-          deckName: 'example2',
-          description: 'thing5',
+          deckName: '',
+          description: '',
         },
       }).then((response) => {
         const newPath = response.data.createDeck._id;
