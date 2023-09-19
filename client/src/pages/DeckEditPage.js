@@ -42,8 +42,8 @@ const DeckEditPage = () => {
                 updatedDescription: description,
             },
         });
-
         navigate('..', { relative: 'path'});
+        window.location.reload();
     }
 
     // Function to handle input changes
