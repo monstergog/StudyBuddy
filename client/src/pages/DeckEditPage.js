@@ -69,6 +69,13 @@ const DeckEditPage = () => {
         });
 
         try {
+            editDeck({
+                variables: {
+                    deckId: deckId,
+                    updatedDeckName: deckName,
+                    updatedDescription: description,
+                },
+            });
             addCard({
                 variables: {
                     deckId: deckId,
