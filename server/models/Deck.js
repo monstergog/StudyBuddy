@@ -7,12 +7,11 @@ const { Schema } = mongoose;
 const deckSchema = new Schema({
   deckName: {
     type: String,
-    required: true,
+    default: '',
   },
   description: {
     type: String,
     default: '',
-    required: true,
   },
   createdBy: {
     type: Schema.Types.ObjectId,
